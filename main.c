@@ -56,6 +56,9 @@ int main(int argc, char *argv[])
     // Copy ROM into buffer
     size_t result = fread(rom_buffer, sizeof(char), (size_t)rom_size, fp);
     
+    // Close file pointer
+    fclose(fp);
+
     for(int i = 0; i<rom_size; i++)
     {
         // Program storage goes from address 0x200 and upwards. 
