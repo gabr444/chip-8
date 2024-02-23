@@ -12,6 +12,8 @@ extern uint32_t pixels[H][W];
 
 extern uint8_t keyMap[16];
 
+extern bool quit;
+
 extern SDL_Renderer *renderer;
 
 void keyPress();

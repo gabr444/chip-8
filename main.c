@@ -75,7 +75,8 @@ int main(int argc, char *argv[])
     initWindow();
     
     int cycle = 0;
-    while (1)
+    printf("\nPress P to quit!\n");
+    while (!quit)
     {
         keyPress();
         if(cycle % 9 == 0)

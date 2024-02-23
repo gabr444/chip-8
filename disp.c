@@ -3,6 +3,7 @@
 uint32_t pixels[H][W] = {0};
 
 uint8_t keyMap[16] = {0};
+bool quit = false;
 SDL_Renderer *renderer;
 
 void initWindow()
@@ -78,6 +79,9 @@ void keyPress()
                         break;
                     case SDLK_v:
                         keyMap[15] = 1;
+                        break;
+                    case SDLK_p:
+                        quit = true;
                         break;
                 }
                 break;
